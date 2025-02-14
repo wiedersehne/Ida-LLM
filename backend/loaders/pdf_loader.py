@@ -3,17 +3,12 @@ from langchain.document_loaders import PyPDFLoader
 from langchain_community.document_loaders import UnstructuredHTMLLoader
 from typing import Any
 from pydantic import BaseModel
-from unstructured.partition.pdf import partition_pdf
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.documents import Document
 from backend.models.llm import get_llm
-import uuid
-import pytesseract
 from PIL import Image
-from langchain.vectorstores import FAISS
 import pdfplumber
-from langchain_chroma import Chroma
 import pymupdf4llm
 from langchain.storage import InMemoryStore
 from langchain.retrievers.multi_vector import MultiVectorRetriever
