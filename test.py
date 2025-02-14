@@ -3,7 +3,7 @@ import requests
 # 1. Get auth token
 
 auth_url = 'https://auth.test.cluster.edrilling/auth/realms/edrilling/protocol/openid-connect/token'
-payload = f'grant_type=password&client_id=wellplanner&username=gb@edrilling.no&password=gb'
+payload = f'grant_type=password&client_id=wellplanner&username=ty@edrilling.no&password=9402'
 headers = {'Content-Type': 'application/x-www-form-urlencoded'}
 token = ''
 
