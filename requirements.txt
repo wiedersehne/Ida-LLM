@@ -17,3 +17,4 @@ pdfplumber
 pymupdf4ll
 dotenv
 paddleocr
+pickle
